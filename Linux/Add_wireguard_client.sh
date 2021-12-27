@@ -3,7 +3,7 @@
 
 
 echo "Enter name of the user/device you want to add: "
-read $VPN_USER
+read VPN_USER
 SERVER_PUBKEY=`cat /etc/wireguard/public.key`
 IP_RANGE=10.100.0
 EXTERNAL_IP=`dig @resolver4.opendns.com myip.opendns.com +short`
